@@ -1,19 +1,21 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FrondtEnd Store</title>
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrondtEnd Store</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
 <body>
     <!--Para crear un codigo limpio utilizaremos el metodo de BEM el cual consiste en la separacion de las cosas por bloques-->
     <!--Todo aquello que no dependa de otro para verse bien sera llamado bloque, esta clase se nombra con un solo nombre-->
-   <!--Lo que dependa de un bloque se llamara elemento y su clase estara nombrada por doble gion bajo-->
+    <!--Lo que dependa de un bloque se llamara elemento y su clase estara nombrada por doble gion bajo-->
 
     <header class="header">
         <a href="index.html">
@@ -23,14 +25,37 @@
     <nav class="navegacion">
         <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
         <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
-</nav>
+    </nav>
 
-<main class="contenedor">
-    <h1>PRODUCTOS</h1>
-</main>
+    <main class="contenedor">
+        <h1>React JS </h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/3.jpg" alt="imagen del producto">
+
+            <div class="camisa__contenido">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem delectus veritatis impedit fuga
+                    eligendi quo, ab aliquid corporis temporibus odit voluptas earum voluptatem ipsa! Quo omnis iure
+                    obcaecati facere molestiae.</p>
+            <form class="formulario" >
+                <select class="formulario__campo">
+
+                    <option disabled selected>--Seleccionar talla--</option>
+                    <option value="">Small</option>
+                    <option value="">Medium</option>
+                    <option value="">Big</option>
+                </select>
+                <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                <input class="formulario__submit" type="submit" value="Agregar al carrito">
+            </form>
+                </div>
+
+        </div>
+    </main>
 </body>
 <footer class="footer">
     <p class="footer__texto"> Front End Store -Todos los derechos Reservados 2022</p>
 
-    </footer>
+</footer>
+
 </html>

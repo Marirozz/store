@@ -1,19 +1,21 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FrondtEnd Store</title>
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrondtEnd Store</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
 <body>
     <!--Para crear un codigo limpio utilizaremos el metodo de BEM el cual consiste en la separacion de las cosas por bloques-->
     <!--Todo aquello que no dependa de otro para verse bien sera llamado bloque, esta clase se nombra con un solo nombre-->
-   <!--Lo que dependa de un bloque se llamara elemento y su clase estara nombrada por doble gion bajo-->
+    <!--Lo que dependa de un bloque se llamara elemento y su clase estara nombrada por doble gion bajo-->
 
     <header class="header">
         <a href="index.html">
@@ -23,14 +25,68 @@
     <nav class="navegacion">
         <a class="navegacion__enlace " href="index.html">Tienda</a>
         <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
-</nav>
+    </nav>
 
-<main class="contenedor">
-    <h1> NOSOTROS</h1>
-</main>
+    <main class="contenedor">
+        <h1> NOSOTROS</h1>
+        <div class="nosotros">
+            <div class="nosotros__contenido">
+                <p>
+
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo ac neque sed finibus.
+                    Vivamus lorem velit, dapibus id tellus ac, bibendum viverra urna. Duis pharetra mi purus, ac porta
+                    mi consectetur vestibulum. Aliquam efficitur, ante eget placerat lacinia, risus ligula efficitur
+                    dui, eget efficitur arcu lectus ac arcu. Nam sit amet nunc id lorem sodales gravida ut in magna. Sed
+                    bibendum, enim sed ultrices pulvinar, leo elit mollis erat, vitae vestibulum orci tortor id metus.
+                    Donec tristique venenatis faucibus. Phasellus posuere non mi sit amet porttitor.
+
+                    Vivamus tincidunt dolor sit amet massa elementum, ut venenatis sem malesuada. Cras bibendum tellus
+                    et efficitur pretium. Nullam in lacinia dui. Pellentesque semper justo massa, sit amet tincidunt
+                    risus elementum at. Nullam tempor diam ut porttitor volutpat. Maecenas eget ante ut nibh ullamcorper
+                    aliquet. Morbi in lacus in risus mattis tempus id pellentesque tortor.
+
+                </p>
+            </div>
+            <img class="nosotros__imagen" src="img/nosotros.jpg" alt="imagen nosotros">
+        </div>
+
+    </main>
+
+    <section class="contenedor comprar">
+        <h2 class="comprar__titulo">Why buy with us?</h2>
+
+        <div class="bloques">
+            <div class="bloque">
+                 <img class="bloque_imagen" src="img/icono_1.png" alt="porque comprar">
+                <h3 class="bloque__titulo">The best price</h3>
+                <p>Morbi in lacus in risus mattis tempus id pellentesque tortor.
+                </p>
+            </div><!--Fin bloque-->
+            <div class="bloque">
+                <img class="bloque_imagen" src="img/icono_2.png" alt="porque comprar">
+                <h3 class="bloque__titulo">For devs</h3>
+                <p>Morbi in lacus in risus mattis tempus id pellentesque tortor.
+                </p>
+            </div><!--Fin bloque-->
+            <div class="bloque">
+                <img class="bloque_imagen" src="img/icono_3.png" alt="porque comprar">
+                <h3 class="bloque__titulo">Free shipping</h3>
+                <p>Morbi in lacus in risus mattis tempus id pellentesque tortor.
+                </p>
+            </div><!--Fin bloque-->
+            <div class="bloque">
+                <img class="bloque_imagen" src="img/icono_4.png" alt="porque comprar">
+                <h3 class="bloque__titulo">The best quality</h3>
+                <p>Morbi in lacus in risus mattis tempus id pellentesque tortor.
+                </p>
+            </div><!--Fin bloque-->
+        </div><!--Fin bloques-->
+    </section>
 </body>
 <footer class="footer">
     <p class="footer__texto"> Front End Store -Todos los derechos Reservados 2022</p>
 
-    </footer>
+</footer>
+
 </html>
